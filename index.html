@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Abdyrazzak  </title>
+    <style>
+        body{
+            background: #000000;
+            
+        }
+        h1{
+            color: aliceblue;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Askerbekov Abdyrazzak</h1>
+    <p>student
+        Full code
+    </p>
+<style>
+        p{
+            color: #f30707;
+        }
+
+</style>
+</body>
+</html>  -->
+
+from PIL import Image, ImageDraw, ImageFont
+
+# Ак фон түзөбүз
+img = Image.new('RGB', (600, 400), color='white')
+
+# Сүрөт үстүнө текст жазабыз
+draw = ImageDraw.Draw(img)
+draw.text((150, 180), "Салам, дүйнө!", fill='blue')
+
+# Сактайбыз
+img.save("design.png")
